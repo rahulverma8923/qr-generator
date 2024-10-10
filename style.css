@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ;/* Change to cover for better responsiveness */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px; /* Reduced padding for smaller screens */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #000000; /* Black color */
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap; /* Allow categories to wrap */
+    justify-content: center; /* Center categories */
+    margin-top: 20px;
+}
+
+.category {
+    background: rgba(0, 0, 0, 0.4); /* Dark background for categories */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 180px; /* Set a fixed width */
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.category:hover {
+    background: #000000; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.category h2 {
+    margin: 0;
+}
+
+.category p {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark button */
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #000000; /* Darker color on hover */
+}
+
+.qrcode {
+    margin-top: 20px;
+}
+
+.qr-item {
+    margin: 10px 0;
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.qr-item:hover {
+    transform: scale(1.05); /* Slightly enlarge QR code on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .category {
+        width: 100%; /* Full width for categories on smaller screens */
+        margin: 5px 0; /* Reduce margin */
+    }
+
+    button {
+        width: 100%; /* Full width button on smaller screens */
+        margin-top: 10px; /* Spacing above button */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Smaller font size for headings */
+    }
+
+    .category {
+        padding: 15px; /* Less padding for categories */
+    }
+
+    button {
+        padding: 8px; /* Smaller padding for buttons */
+    }
+}

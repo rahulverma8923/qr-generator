@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ; /* Changed to cover for better responsiveness */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-image: url(img/card1-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Changed to cover for better responsiveness */
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #000000; /* Dark border */
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark button */
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #000000; /* Darker color on hover */
+}
+
+.qrcode {
+    margin-top: 20px;
+}
+
+.qr-item {
+    margin: 10px 0;
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.qr-item:hover {
+    transform: scale(1.05); /* Slightly enlarge QR code on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    input {
+        width: 100%; /* Full width for input fields on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons on smaller screens */
+        margin-top: 10px; /* Spacing above button */
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        padding: 8px; /* Smaller padding for inputs */
+    }
+
+    button {
+        padding: 8px; /* Smaller padding for buttons */
+    }
+}

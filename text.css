@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Changed to cover for better responsiveness */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-image: url(img/text-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ; /* Changed to cover for better responsiveness */
+}
+
+h1 {
+    color: #000000; /* Black color */
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #000000; /* Dark border */
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark button */
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #000000; /* Darker color on hover */
+}
+
+.qrcode {
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    input {
+        width: 100%; /* Full width for input fields on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons on smaller screens */
+        margin-top: 10px; /* Spacing above button */
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        padding: 8px; /* Smaller padding for inputs */
+    }
+
+    button {
+        padding: 8px; /* Smaller padding for buttons */
+    }
+}
